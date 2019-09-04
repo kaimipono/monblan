@@ -1,0 +1,75 @@
+header {
+	width: auto;
+	height: 200px;
+	background-color: #fff;
+	color: #000;
+	font-size: 17px;
+	box-shadow: 10px 0 30px 0 rgba(0, 0, 0, .1);
+	.container {
+		display: flex;
+		background-color: inherit;
+		height: 100px;
+		@media screen and (max-width: 767px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	.logo {
+		flex: 0 1 calc(100% / 4);
+		margin: 0 20px;
+		@media screen and (max-width: 767px) {
+			height: 10px;
+			opacity: .2;
+		}
+	}
+	.right-block {
+		.row {
+			display: flex;
+			align-items: center;
+			margin: 15px 0;
+			@media screen and (max-width: 480px) {
+				margin: 10px 0;
+			}
+		}
+		.brandName {
+			font-size: 35px;
+			@media screen and (max-width: 480px) {
+				font-size: 25px;
+			}
+		}
+		.btnStart {
+			display: inline-block;
+			margin: 0 25px;
+			background-color: #fff;
+			color: #599fe0;
+			font-size: 15px;
+			height: 35px;
+			border: 1px solid #599fe0;
+			padding: 5px 8px;
+			border-radius: 5px;
+			transition: all .5s ease;
+			&:hover {
+				background-color: #599fe0;
+				color: #fff;
+			}
+		}
+		.stat {
+			display: flex;
+			justify-content: space-between;
+			&Number {
+				font-weight: 700;
+			}
+		}
+		.datePickers {
+			display: flex;
+			justify-content: space-between;
+			input {
+				border-radius: 5px;
+			}
+			@media screen and (max-width: 480px) {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+}

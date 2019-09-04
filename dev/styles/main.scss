@@ -1,0 +1,48 @@
+// Подключение шрифтов и переменных
+@import 'fonts';
+@import 'vars';
+@import 'sprite';
+// Подключение компонентов
+@import 'components/header';
+@import 'components/cards';
+@import 'components/footer';
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+.pageWrapper {
+	background-color: $pageWrapperColor;
+	font-size: 0.75rem;
+	color: #fff;
+}
+
+.container {
+	max-width: $pageMaxWidth;
+}
+
+main {
+	padding: 50px 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.btnLoadMore {
+	display: block;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 16px;
+	text-transform: uppercase;
+	transition: all .5 ease;
+	&:hover {
+		background-color: $brandColor;
+		color: #fff;
+		border-color: #fff;
+	}
+	color: #000;
+	padding: 10px 30px;
+}
